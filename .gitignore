@@ -1,0 +1,69 @@
+# Archivos y directorios de Python
+##################################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+lib/
+lib64/
+include/
+bin/
+share/
+pip-log.txt
+pip-delete-this-arg.txt
+.tox/
+.coverage
+.pytest_cache/
+htmlcov/
+.nox/
+.ipynb_checkpoints
+.mypy_cache/
+.vscode/
+*.egg-info/
+.DS_Store # macOS
+.env # Variables de entorno, si las usas
+*.log
+
+# IDEs Python
+.idea/ # PyCharm
+.vscode/ # VS Code (puedes descomentar si quieres ignorar la carpeta completa)
+
+# Archivos de depuración y generación
+dist/
+build/
+*.egg
+
+# Archivos de Angular
+####################
+# Node modules
+/node_modules
+
+# Compilación de Angular
+/dist
+/out-tsc
+
+# Archivos de depuración y logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.angular/cache
+.sass-cache/
+
+# Archivos de configuración
+# Estos podrían ser específicos de tu proyecto y quizás quieras versionarlos.
+# Pero a menudo se ignoran si contienen secretos o son generados.
+# .env
+# .firebaserc
+# .vscode/
+
+# Archivos del sistema operativo
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Archivos temporales de editores de texto
+*~
+*.swp
+.fuse_hidden*

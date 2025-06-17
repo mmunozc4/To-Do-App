@@ -1,0 +1,10 @@
+<app-taskform (taskCreated)="loadTasks()"></app-taskform>
+
+<ul class="list-group">
+  <app-task-item
+    *ngFor="let task of tasks"
+    [task]="task"
+    (taskChanged)="statusTask(task.id)"
+    (taskDeleted)="deleteTask(task.id)">
+  </app-task-item>
+</ul>

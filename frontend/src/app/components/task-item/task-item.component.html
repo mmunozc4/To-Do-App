@@ -1,0 +1,14 @@
+<li [class.completed]="task.completed" class="list-group-item">
+  <div class="me-auto">
+    <div class="fw-bold">{{ task.title }}</div>
+    <small *ngIf="task.description">{{ task.description }}</small><br />
+    <small>status: 
+      <span [style.color]="task.completed ? 'green' : 'red'">
+        {{ task.completed ? 'Completada' : 'Pendiente' }}
+      </span>
+    </small><br />
+    <small>Create At: {{ task.createdAt | date:'short' }}</small>
+  </div>
+  <button class="btn btn-sm btn-outline-danger" (click)="taskDeleted.emit()">DELETE</button>
+  <button class="btn btn-sm btn-success" (click)="taskChanged.emit()">COMPLETE</button>
+</li>
